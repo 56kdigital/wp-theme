@@ -9,11 +9,9 @@
 
 .main-nav a {
   display: block;
-  color: $dk-grey;
   font-weight: $weight-medium;
 }
 
-.main-nav a:hover,
 .main-nav .current-menu-item a {
   color: $yellow;
 }

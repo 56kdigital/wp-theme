@@ -16,11 +16,9 @@
 		    <?php while ( have_rows('clients_logo_list') ) : the_row(); ?>
 					<?php
 						$image_id = get_sub_field('logo');
-						$src = wp_get_attachment_image_src($image_id, 'client-logo');
 						$src_2x = wp_get_attachment_image_src($image_id, 'client-logo-2x');
-						//$srcset = wp_get_attachment_image_srcset($image_id, 'client-logo-2x');
 					?>
-					<li class="col-1-5"><img src="<?php echo $src_2x[0]; ?>" srcset="<?php //echo $srcset; ?>" alt="<?php the_sub_field('name'); ?>" /></li>
+					<li class="col-1-5"><img src="<?php echo $src_2x[0]; ?>" alt="<?php the_sub_field('name'); ?>" /></li>
 		    <?php endwhile; ?>
 			</ul>
 		<?php endif; ?>
@@ -47,59 +45,41 @@
 		<div class="home-careers__img flex-col"></div>
 		<div class="home-careers__content flex-col">
 			<h2 class="title__h2 section-title"><?php the_field('careers_section_title'); ?></h2>
-			<div class="careers-list">
-				<div class="careers-list__item">
-					<h4 class="job-title">Senior konsult, med fokus på SEM</h4>
-					<ul class="job-details">
-						<li>
-							<svg class="icon-clock">
-								<use xlink:href="#icon-clock"></use>
-							</svg>
-							<span class="job-meta">Heltid</span>
-						</li>
-						<li>
-							<svg class="icon-cal">
-								<use xlink:href="#icon-cal"></use>
-							</svg>
-							<span class="job-meta">Heltid</span>
-						</li>
-					</ul>
+
+			<?php if( have_rows('careers_list') ): ?>
+				<div class="careers-list">
+					<?php while ( have_rows('careers_list') ) : the_row(); ?>
+						<?php
+						$post_object = get_sub_field('job_post');
+						if( $post_object ):
+							$post = $post_object;
+							setup_postdata( $post );
+
+							?>
+							<div class="careers-list__item">
+								<h4 class="job-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+								<ul class="job-details">
+									<li>
+										<svg class="icon-clock">
+											<use xlink:href="#icon-clock"></use>
+										</svg>
+										<span class="job-meta"><?php the_field('job_type'); ?></span>
+									</li>
+									<li>
+										<svg class="icon-location">
+											<use xlink:href="#icon-location"></use>
+										</svg>
+										<span class="job-meta"><?php the_field('job_location'); ?></span>
+									</li>
+								</ul>
+							</div>
+					    <?php wp_reset_postdata(); ?>
+						<?php endif; ?>
+
+					<?php endwhile; ?>
 				</div>
-				<div class="careers-list__item">
-					<h4 class="job-title">Senior konsult, med fokus på SEM</h4>
-					<ul class="job-details">
-						<li>
-							<svg class="icon-clock">
-								<use xlink:href="#icon-clock"></use>
-							</svg>
-							<span class="job-meta">Heltid</span>
-						</li>
-						<li>
-							<svg class="icon-cal">
-								<use xlink:href="#icon-cal"></use>
-							</svg>
-							<span class="job-meta">Heltid</span>
-						</li>
-					</ul>
-				</div>
-				<div class="careers-list__item">
-					<h4 class="job-title">Senior konsult, med fokus på SEM</h4>
-					<ul class="job-details">
-						<li>
-							<svg class="icon-clock">
-								<use xlink:href="#icon-clock"></use>
-							</svg>
-							<span class="job-meta">Heltid</span>
-						</li>
-						<li>
-							<svg class="icon-cal">
-								<use xlink:href="#icon-cal"></use>
-							</svg>
-							<span class="job-meta">Heltid</span>
-						</li>
-					</ul>
-				</div>
-			</div>
+			<?php endif; ?>
+
 			<div class="section-cta">
 				<p><a href="<?php the_field('careers_section_button_link'); ?>" class="btn"><?php the_field('careers_section_button_label'); ?></a></p>
 			</div>

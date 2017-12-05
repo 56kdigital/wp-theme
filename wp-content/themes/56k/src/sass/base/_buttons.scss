@@ -1,6 +1,11 @@
 
 a {
   @include global-transition(.1s);
+  color: $dk-grey;
+
+  &:hover {
+    color: $yellow;
+  }
 }
 
 @mixin btn {

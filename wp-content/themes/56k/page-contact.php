@@ -4,7 +4,7 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<section class="contact-hero hero">
+	<section class="hero hero--center">
     <div class="container">
       <h1 class="title__h2">Get in Touch!</h1>
       <p>Want to be the next part of the 56K saga? Or maybe you need our help with? Which ever the case, we’re open for business. We usually answer within one day.  Please contact us below.</p>

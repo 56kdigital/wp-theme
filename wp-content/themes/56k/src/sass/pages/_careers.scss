@@ -1,0 +1,43 @@
+
+.job-hero {
+	text-align: center;
+}
+
+.job-hero .container {
+	padding-bottom: 0;
+}
+
+.job-hero .job-details {
+	justify-content: center;
+}
+
+.job-post .container {
+	padding-top: $base*4;
+}
+
+.careers-list__item {
+	margin-bottom: $base;
+	padding-bottom: $base;
+	border-bottom: 1px solid $yellow;
+}
+
+.job-title {
+	margin-bottom: 12px;
+	font-weight: $weight-medium;
+}
+
+.job-details {
+	display: flex;
+}
+
+.job-details li {
+	@include font-size(14px);
+}
+
+.job-details li:not(:last-child) {
+	margin-right: 40px;
+}
+
+.job-meta {
+	margin-left: 4px;
+}

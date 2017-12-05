@@ -1,4 +1,12 @@
 
+.hero--center .container {
+	@include bp-min-width($medium) {
+		max-width: 720px;
+		text-align: center;
+		padding-bottom: 0;
+	}
+}
+
 .hero__title {
 	color: #fff;
 

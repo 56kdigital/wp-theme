@@ -1,13 +1,13 @@
 <?php
-add_action( 'after_setup_theme', 'tlc_setup' );
-function tlc_setup() {
+add_action( 'after_setup_theme', 'fsk_setup' );
+function fsk_setup() {
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 	register_nav_menu( 'primary', __( 'Primary Menu', 'tlc' ) );
 }
 
-add_action( 'wp_enqueue_scripts', 'tlc_load_scripts' );
-function tlc_load_scripts() {
+add_action( 'wp_enqueue_scripts', 'fsk_load_scripts' );
+function fsk_load_scripts() {
 
 	define('ENQUEUE_VERSION', '1.0.0');
 
@@ -63,8 +63,44 @@ function tlc_load_scripts() {
 	wp_enqueue_style('main-css');
 }
 
-add_filter( 'wp_title', 'tlc_filter_wp_title' );
-function tlc_filter_wp_title( $title ) {
+
+// ###################################################
+// Custom Post Types
+// ###################################################
+
+function custom_register_post_types() {
+
+	// Careers
+	register_post_type('careers', array(
+		'labels' => array(
+			'name' => __( 'Careers' ),
+			'singular_name' => __( 'Career' )
+		),
+		'public'                => true,
+		'publicly_queryable'    => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'show_in_nav_menus'     => true,
+		'query_var'             => true,
+		'menu_icon' 						=> 'dashicons-lightbulb',
+		'capability_type'       => 'post',
+		'has_archive'						=> true,
+		'menu_position'         => null,
+		'exclude_from_search'   => false,
+		'rewrite' 							=> array( 'with_front' => false, 'slug' => 'careers' ),
+		'supports' 							=> array( 'title', 'editor', 'thumbnail' )
+	));
+
+}
+add_action('init', 'custom_register_post_types');
+
+
+// ###################################################
+// Custom Functions
+// ###################################################
+
+add_filter( 'wp_title', 'fsk_filter_wp_title' );
+function fsk_filter_wp_title( $title ) {
 	return $title . esc_attr( get_bloginfo( 'name' ) );
 }
 

@@ -25,6 +25,13 @@
     </g>
   </symbol>
 
+  <symbol id="icon-location" width="12" height="17">
+    <g transform="translate(1 1)" stroke="#FFB500" fill="none" fill-rule="evenodd">
+      <circle cx="5.12" cy="5" r="2"/>
+      <path d="M5.12 16c3.413-5.368 5.12-8.995 5.12-10.88A5.12 5.12 0 1 0 0 5.12C0 7.005 1.707 10.632 5.12 16z"/>
+    </g>
+  </symbol>
+
   <symbol id="icon-next" width="37" height="70">
     <title>Next</title>
     <path d="M1 0l35 35L1 70" stroke="#1D1D1B" fill="none"/>
