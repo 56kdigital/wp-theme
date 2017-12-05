@@ -1,0 +1,19 @@
+
+.page-template-default .hero {
+	min-height: $base*10;
+	background: $dk-grey $home-hero no-repeat center;
+	background-size: cover;
+
+	@include bp-min-width($medium) {
+		min-height: $base*20;
+	}
+}
+
+.page-content .container {
+  max-width: 600px;
+
+	@include bp-min-width($medium) {
+		padding-top: $base*6;
+		padding-bottom: $base*6;
+	}
+}

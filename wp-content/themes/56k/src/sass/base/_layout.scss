@@ -1,0 +1,44 @@
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  @include bp-max-width($medium) {
+    padding: $base 20px;
+  }
+
+  @include bp-min-width($medium) {
+    width: 94%;
+    padding-top: $base*3;
+    padding-bottom: $base*3;
+  }
+}
+
+.bg--dk-grey {
+  background: $dk-grey;
+  color: #fff;
+}
+
+.bg--yellow {
+  background: $yellow;
+}
+
+.section-cta {
+  margin-top: $base*2;
+}
+
+@mixin is-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.is-hidden {
+  @include is-hidden;
+}

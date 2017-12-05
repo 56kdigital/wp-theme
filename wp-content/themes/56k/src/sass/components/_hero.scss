@@ -1,0 +1,21 @@
+
+.hero__title {
+	color: #fff;
+
+	@include bp-min-width($medium) {
+		max-width: 560px;
+	}
+}
+
+.hero__title--intro {
+	display: block;
+	color: $yellow;
+}
+
+.hero h1:not(:last-child) {
+	margin-bottom: $base*1.5;
+}
+
+.hero p {
+	@include font-units(20px, 27px);
+}

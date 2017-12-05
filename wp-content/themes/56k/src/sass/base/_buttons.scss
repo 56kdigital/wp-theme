@@ -1,0 +1,40 @@
+
+a {
+  @include global-transition(.1s);
+}
+
+@mixin btn {
+  @include font-size(12px);
+  display: inline-block;
+  padding: 18px 36px;
+  background: $yellow;
+  border-radius: 25px;
+  color: $dk-grey;
+  font-weight: $weight-medium;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.btn {
+  @include btn;
+}
+
+.contact-btn {
+  width: 60px;
+  height: 60px;
+  background: $yellow;
+  border-radius: 50%;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+  @include global-transition(.1s);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.submit-wrap input[type="button"] {
+  @include btn;
+}

@@ -1,0 +1,12 @@
+
+.contact-hero .container {
+	@include bp-min-width($medium) {
+		max-width: 720px;
+		text-align: center;
+		padding-bottom: 0;
+	}
+}
+
+.textarea-container {
+	padding-top: $base*2;
+}

@@ -1,0 +1,34 @@
+/*
+Theme Name: 56k v1
+Theme URI: http://56k.se
+Author: Brad Sawicki
+Author URI: http://56kdigital.se
+Version: 1.0
+Description: Custom theme for 56k
+*/
+
+@import "base/reset";
+@import "base/media-queries";
+@import "base/colors";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/typography";
+@import "base/images";
+@import "base/icons";
+@import "base/grid";
+@import "base/layout";
+@import "base/buttons";
+@import "base/forms";
+
+@import "components/header";
+@import "components/nav";
+@import "components/footer";
+@import "components/hero";
+@import "components/slider";
+@import "components/testimonials";
+
+@import "pages/home";
+@import "pages/global";
+@import "pages/about";
+@import "pages/services";
+@import "pages/contact";

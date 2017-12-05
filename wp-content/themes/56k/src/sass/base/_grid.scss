@@ -1,0 +1,63 @@
+
+.flex-container {
+  @include bp-min-width($medium) {
+  	display: flex;
+  }
+}
+
+.flex-container .flex-col {
+  @include bp-min-width($medium) {
+    width: 50%;
+  }
+}
+
+.flex-grid {
+  @include bp-min-width($medium) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+  }
+}
+
+.flex-grid [class^='col-'] {
+  @include bp-min-width($medium) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.col-3-4 {
+  @include bp-min-width($medium) {
+    width: 75%;
+  }
+}
+
+.col-2-3 {
+  @include bp-min-width($medium) {
+    width: 66.66%;
+  }
+}
+
+.col-1-2 {
+  @include bp-min-width($medium) {
+    width: 50%;
+  }
+}
+
+.col-1-3 {
+  @include bp-min-width($medium) {
+    width: 33.33%;
+  }
+}
+
+.col-1-4 {
+  @include bp-min-width($medium) {
+    width: 25%;
+  }
+}
+
+.col-1-6 {
+  @include bp-min-width($medium) {
+    width: 16.666%;
+  }
+}

@@ -1,0 +1,14 @@
+
+.header .container {
+	display: flex;
+	justify-content: space-between;
+
+	@include bp-min-width($medium) {
+		padding-top: $base*2;
+		padding-bottom: $base*2;
+	}
+}
+
+.header-logo .icon-logo {
+	fill: #000;
+}

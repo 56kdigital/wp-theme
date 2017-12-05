@@ -1,0 +1,29 @@
+
+.footer {
+	background: $dk-grey;
+	color: #fff;
+}
+
+.footer a {
+	color: #fff;
+}
+
+.footer .title__h3 {
+	margin-bottom: 12px;
+}
+
+.footer p {
+	@include font-units(14px, 20px);
+}
+
+.footer p:not(:last-child) {
+	margin-bottom: $base;
+}
+
+.footer-logo .icon-logo {
+	fill: $yellow;
+}
+
+.footer-contact-link {
+	text-align: right;
+}

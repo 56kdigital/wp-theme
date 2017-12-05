@@ -1,0 +1,30 @@
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+[class^="icon-"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-logo {
+	width: 64px;
+	height: 29px;
+}
+
+.icon-contact {
+  fill: $dk-grey;
+  width: 26px;
+  height: 24px;
+}
+
+.icon-clock {
+	width: 18px;
+	height: 18px;
+}
+
+.icon-cal {
+	width: 18px;
+	height: 16px;
+}

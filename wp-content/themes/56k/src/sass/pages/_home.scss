@@ -1,0 +1,66 @@
+
+.home-hero {
+	background: $dk-grey $home-hero no-repeat center;
+	background-size: cover;
+}
+
+.home-hero .container {
+	@include bp-min-width($medium) {
+		padding-top: $base*8;
+		padding-bottom: $base*8;
+	}
+}
+
+.home-about {
+	background: $dk-grey;
+}
+
+.home-about__img {
+	background: $home-about no-repeat center;
+	background-size: cover;
+}
+
+.home-about__content {
+	padding: $base*6 7.5%;
+}
+
+.home-careers__img {
+	background: $home-careers no-repeat center;
+	background-size: cover;
+
+	@include bp-min-width($medium) {
+		order: 1;
+	}
+}
+
+.home-careers__content {
+	min-height: 70vh;
+	padding: $base*3 7.5%;
+}
+
+.careers-list__item {
+	margin-bottom: $base;
+	padding-bottom: $base;
+	border-bottom: 1px solid $yellow;
+}
+
+.job-title {
+	margin-bottom: 12px;
+	font-weight: $weight-medium;
+}
+
+.job-details {
+	display: flex;
+}
+
+.job-details li {
+	@include font-size(14px);
+	margin-right: 40px;
+}
+
+.home-testimonials .container {
+	@include bp-min-width($medium) {
+		padding-top: $base*8;
+		padding-bottom: $base*8;
+	}
+}
