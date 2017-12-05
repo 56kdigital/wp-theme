@@ -18,6 +18,11 @@ a {
   font-weight: $weight-medium;
   line-height: 1;
   text-transform: uppercase;
+
+  &:hover {
+    color: $dk-grey;
+    background: lighten($yellow, 10%)
+  }
 }
 
 .btn {
