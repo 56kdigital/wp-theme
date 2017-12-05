@@ -25,11 +25,11 @@
 				</div>
 
 				<div class="col-1-4 footer-contact-link">
-					<button class="contact-btn">
+					<a href="<?php bloginfo('url'); ?>/contact/" class="contact-btn">
 						<svg class="icon-contact">
 							<use xlink:href="#icon-contact"></use>
 						</svg>
-					</button>
+					</a>
 				</div>
 			</div>
 

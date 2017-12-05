@@ -19,13 +19,6 @@ a {
   @include btn;
 }
 
-.contact-btn {
-  width: 60px;
-  height: 60px;
-  background: $yellow;
-  border-radius: 50%;
-}
-
 input[type="submit"],
 input[type="button"],
 button {

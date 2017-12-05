@@ -12,7 +12,7 @@
 	<header class="header">
 		<div class="container">
 			<div class="header-logo">
-				<a href="/">
+				<a href="<?php bloginfo('url'); ?>" title="Home">
 					<svg class="icon-logo">
 						<use xlink:href="#icon-logo"></use>
 					</svg>
