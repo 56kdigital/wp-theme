@@ -93,6 +93,9 @@ function post_navigation() {
 // Image Sizes
 add_image_size( 'post-grid-thumb', 410, 300, true );
 
+add_image_size( 'client-logo', 180, 60 );
+add_image_size( 'client-logo-2x', 360, 120 );
+
 
 // Default blog image
 function get_default_blog_image($size=null){
