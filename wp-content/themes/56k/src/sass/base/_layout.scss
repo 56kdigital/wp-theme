@@ -42,3 +42,7 @@
 .is-hidden {
   @include is-hidden;
 }
+
+.js-no-scroll {
+  overflow: hidden;
+}

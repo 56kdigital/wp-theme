@@ -19,6 +19,11 @@
 				</a>
 			</div>
 			<nav class="main-nav">
+				<button class="hamburger">
+					<span class="hamburger__bar"></span>
+					<span class="hamburger__bar"></span>
+					<span class="hamburger__bar"></span>
+				</button>
 				<?php wp_nav_menu( array('menu'=>'1', 'container'=>'') ); ?>
 			</nav>
 		</div>
