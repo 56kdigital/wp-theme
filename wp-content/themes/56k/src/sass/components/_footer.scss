@@ -1,5 +1,6 @@
 
 .footer {
+	position: relative;
 	background: $dk-grey;
 	color: #fff;
 }
@@ -18,6 +19,13 @@
 
 .footer p:not(:last-child) {
 	margin-bottom: $base;
+}
+
+.footer-logo,
+.footer-contact {
+	@include bp-max-width($medium) {
+		margin-bottom: $base;
+	}
 }
 
 .footer-logo .icon-logo {
@@ -39,4 +47,12 @@
   height: 60px;
   background: $yellow;
   border-radius: 50%;
+
+	@include bp-max-width($medium) {
+		position: absolute;
+		top: 40px;
+		right: 20px;
+		width: 48px;
+	  height: 48px;
+	}
 }

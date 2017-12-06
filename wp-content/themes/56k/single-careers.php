@@ -4,7 +4,7 @@
 
 	<section class="job-hero">
 		<div class="container">
-			<h1 class="page-title title__h2"><?php the_title(); ?></h1>
+			<h1 class="job-hero__title title__h2"><?php the_title(); ?></h1>
 			<ul class="job-details">
 				<li>
 					<svg class="icon-clock">

@@ -59,10 +59,18 @@
 .home-about__img {
 	background: $home-about no-repeat center;
 	background-size: cover;
+
+	@include bp-max-width($medium) {
+		height: $base*10;
+	}
 }
 
 .home-about__content {
-	padding: $base*6 7.5%;
+	padding: $base*2 20px;
+
+	@include bp-min-width($medium) {
+		padding: $base*6 7.5%;
+	}
 }
 
 .home-careers__img {
@@ -72,11 +80,19 @@
 	@include bp-min-width($medium) {
 		order: 1;
 	}
+
+	@include bp-max-width($medium) {
+		height: $base*10;
+	}
 }
 
 .home-careers__content {
-	min-height: 70vh;
-	padding: $base*3 7.5%;
+	padding: $base*2 20px;
+
+	@include bp-min-width($medium) {
+		min-height: 70vh;
+		padding: $base*3 7.5%;
+	}
 }
 
 .home-testimonials .container {

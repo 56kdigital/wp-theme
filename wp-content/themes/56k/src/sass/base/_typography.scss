@@ -30,6 +30,7 @@ em {
 }
 
 .title__h1 {
+  @include font-units(30px, 36px);
   font-family: $serif;
 
   @include bp-min-width($medium) {
@@ -38,6 +39,7 @@ em {
 }
 
 .title__h2 {
+  @include font-units(24px, 30px);
   font-family: $serif;
 
   @include bp-min-width($medium) {

@@ -3,6 +3,16 @@
 	text-align: center;
 }
 
+.testimonial-slider__item {
+	padding-left: 40px;
+	padding-right: 40px;
+
+	@include bp-min-width($medium) {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+}
+
 .testimonial-quote {
 	max-width: 760px;
 	margin: 0 auto $base*1.5;

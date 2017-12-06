@@ -1,9 +1,10 @@
 
 .hero--center .container {
+	padding-bottom: 0;
+
 	@include bp-min-width($medium) {
 		max-width: 720px;
 		text-align: center;
-		padding-bottom: 0;
 	}
 }
 
@@ -25,5 +26,7 @@
 }
 
 .hero p {
-	@include font-units(20px, 27px);
+	@include bp-min-width($medium) {
+		@include font-units(20px, 27px);
+	}
 }

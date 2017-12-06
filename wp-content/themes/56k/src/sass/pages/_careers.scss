@@ -1,18 +1,32 @@
 
 .job-hero {
-	text-align: center;
+	@include bp-min-width($medium) {
+		text-align: center;
+	}
 }
 
 .job-hero .container {
 	padding-bottom: 0;
 }
 
+.job-hero__title {
+	margin-bottom: 12px;
+
+	@include bp-min-width($medium) {
+		margin-bottom: 36px;
+	}
+}
+
 .job-hero .job-details {
-	justify-content: center;
+	@include bp-min-width($medium) {
+		justify-content: center;
+	}
 }
 
 .job-post .container {
-	padding-top: $base*4;
+	@include bp-min-width($medium) {
+		padding-top: $base*4;
+	}
 }
 
 .careers-list__item {

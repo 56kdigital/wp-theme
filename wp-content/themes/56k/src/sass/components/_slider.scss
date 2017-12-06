@@ -101,15 +101,25 @@
 
 .slick-arrow {
   @include vertical-center;
-  width: 37px;
-  height: 70px;
+  width: 18px;
+  height: 36px;
   padding: 0;
   background: none;
+
+  @include bp-min-width($medium) {
+    width: 37px;
+    height: 70px;
+  }
 }
 
 .slick-arrow svg {
-  width: 37px;
-  height: 70px;
+  width: 18px;
+  height: 36px;
+
+  @include bp-min-width($medium) {
+    width: 37px;
+    height: 70px;
+  }
 }
 
 .slick-prev {
