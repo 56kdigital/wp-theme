@@ -156,3 +156,10 @@ function wpgood_nf_display_enqueue_scripts(){
 	wp_dequeue_style( 'nf-display' );
 }
 add_action( 'nf_display_enqueue_scripts', 'wpgood_nf_display_enqueue_scripts');
+
+
+// Move Yoast to bottom
+function yoasttobottom() {
+	return 'low';
+}
+add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
