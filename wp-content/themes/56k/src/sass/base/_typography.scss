@@ -62,14 +62,14 @@ em {
   font-family: $serif;
 
   @include bp-min-width($medium) {
-    @include font-units(30px, 36px);
+    @include font-units(33px, 36px);
     margin-bottom: 12px;
   }
 }
 
 .body-content p + h1,
 .body-content p + h2 {
-  padding-top: 12px;
+  padding-top: $base;
 }
 
 .body-content h3,
@@ -82,13 +82,24 @@ em {
 .body-content ul,
 .body-content ol {
   @include bp-min-width($medium) {
-    @include font-units(18px, 24px);
+    @include font-units(20px, 27px);
   }
 }
 
-.body-content p:not(:last-child),
-.body-content ul:not(:last-child),
-.body-content ol:not(:last-child),
-.body-content blockquote:not(:last-child) {
-  margin-bottom: 1em;
+.body-content,
+.section-content {
+  p:not(:last-child),
+  ul:not(:last-child),
+  ol:not(:last-child),
+  blockquote:not(:last-child) {
+    margin-bottom: 1.25em;
+  }
+}
+
+.section-content p,
+.section-content ul,
+.section-content ol {
+  @include bp-min-width($medium) {
+    @include font-units(18px, 24px);
+  }
 }

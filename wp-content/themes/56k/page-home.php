@@ -30,7 +30,7 @@
 		<div class="home-about__img flex-col"></div>
 		<div class="home-about__content flex-col">
 			<h2 class="title__h2 section-title"><?php the_field('about_section_title'); ?></h2>
-			<div class="body-content">
+			<div class="section-content">
 				<?php the_field('about_section_content'); ?>
 			</div>
 			<div class="section-cta">
