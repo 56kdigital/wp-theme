@@ -36,12 +36,17 @@
 }
 
 .job-title {
-	margin-bottom: 12px;
 	font-weight: $weight-medium;
+}
+
+.job-teaser {
+	@include font-units(14px, 21px);
+	padding-top: 6px;
 }
 
 .job-details {
 	display: flex;
+	padding-top: 12px;
 }
 
 .job-details li {

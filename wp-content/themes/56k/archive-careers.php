@@ -14,6 +14,10 @@
 			<div class="careers-list">
 				<div class="careers-list__item">
 					<h4 class="job-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+					<?php $teaser = get_field('job_teaser'); ?>
+					<?php if($teaser): ?>
+						<p class="job-teaser"><?php echo $teaser ?></p>
+					<?php endif; ?>
 					<ul class="job-details">
 						<li>
 							<svg class="icon-clock">
