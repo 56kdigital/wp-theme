@@ -54,8 +54,7 @@
 						if( $post_object ):
 							$post = $post_object;
 							setup_postdata( $post );
-
-							?>
+						?>
 							<div class="careers-list__item">
 								<h4 class="job-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 								<ul class="job-details">

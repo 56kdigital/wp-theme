@@ -35,6 +35,8 @@
 				</div>
 			</div>
 		<?php endwhile; endif; ?>
+
 	</div>
 </section>
+
 <?php get_footer(); ?>
