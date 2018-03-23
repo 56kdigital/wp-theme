@@ -163,7 +163,7 @@
         },
         {
             "key": "field_5a1fc4701331b",
-            "label": "About Section Button Label",
+            "label": "About Section Button 1 Label",
             "name": "about_section_button_label",
             "type": "text",
             "instructions": "",
@@ -182,8 +182,46 @@
         },
         {
             "key": "field_5a1fc4791331c",
-            "label": "About Section Button Link",
+            "label": "About Section Button 1 Link",
             "name": "about_section_button_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_5ab4ea2236832",
+            "label": "About Section Button 2 Label",
+            "name": "about_section_button_2_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ab4ea3136833",
+            "label": "About Section Button 2 Link",
+            "name": "about_section_button_2_link",
             "type": "page_link",
             "instructions": "",
             "required": 0,
@@ -378,5 +416,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1512501417
+    "modified": 1521805892
 }

@@ -96,6 +96,22 @@
 	}
 }
 
+.home-about__cta ul {
+	@include bp-min-width($small) {
+		display: flex;
+	}
+}
+
+.home-about__cta li:first-child {
+	@include bp-max-width($small) {
+		margin-bottom: $base;
+	}
+
+	@include bp-min-width($small) {
+		margin-right: 30px;
+	}
+}
+
 .home-careers__img {
 	background: $home-careers no-repeat center;
 	background-size: cover;

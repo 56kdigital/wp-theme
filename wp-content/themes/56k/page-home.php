@@ -33,8 +33,11 @@
 			<div class="section-content">
 				<?php the_field('about_section_content'); ?>
 			</div>
-			<div class="section-cta">
-				<p><a href="<?php the_field('about_section_button_link'); ?>" class="btn"><?php the_field('about_section_button_label'); ?></a></p>
+			<div class="home-about__cta section-cta">
+				<ul>
+					<li><a href="<?php the_field('about_section_button_link'); ?>" class="btn"><?php the_field('about_section_button_label'); ?></a></li>
+					<li><a href="<?php the_field('about_section_button_2_link'); ?>" class="btn--outline"><?php the_field('about_section_button_2_label'); ?></a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
