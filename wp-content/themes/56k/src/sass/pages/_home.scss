@@ -129,7 +129,7 @@
 	padding: $base*2 20px;
 
 	@include bp-min-width($medium) {
-		min-height: 70vh;
+		min-height: 560px;
 		padding: $base*3 7.5%;
 	}
 }
