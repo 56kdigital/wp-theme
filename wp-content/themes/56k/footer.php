@@ -1,5 +1,15 @@
 	</main>
 
+	<?php
+		$address = get_field('address', 'options');
+		$postal_code = get_field('postal_code', 'options');
+		$city = get_field('city', 'options');
+		$country = get_field('country', 'options');
+
+		$email = get_field('contact_email', 'options');
+		$phone = get_field('company_phone', 'options');
+	?>
+
 	<footer class="footer">
 		<div class="container">
 
@@ -12,11 +22,10 @@
 
 				<div class="col-1-4 footer-contact">
 					<h3 class="title__h3">Contact</h3>
-					<p><?php the_field('address', 'options'); ?> <br />
-						<?php the_field('postal_code', 'options'); ?>  <?php the_field('city', 'options'); ?> <br />
-						 <?php the_field('country', 'options'); ?> </p>
-					<p>  <a href="mailto:<?php the_field('contact_email', 'options'); ?>"><?php the_field('contact_email', 'options'); ?></a> <br />
-						<?php the_field('company_phone', 'options'); ?></p>
+					<p><?php echo $address; ?><br />
+					<?php echo $postal_code; ?> <?php echo $city; ?><br />
+					<?php echo $country; ?></p>
+					<p><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>
 				</div>
 
 				<div class="col-1-4 footer-about">
