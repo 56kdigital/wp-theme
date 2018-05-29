@@ -163,3 +163,29 @@ function yoasttobottom() {
 	return 'low';
 }
 add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
+
+
+// Cookie Snippet
+function cookie_consent_js() {
+  ?>
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+		<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+		<script>
+			window.addEventListener("load", function(){
+			window.cookieconsent.initialise({
+			  "palette": {
+			    "popup": {
+			      "background": "#3c3c3c"
+			    },
+			    "button": {
+			      "background": "#ffb500"
+			    }
+			  },
+			  "content": {
+			    "href": "https://56kdigital.com/privacy-policy/"
+			  }
+			})});
+		</script>
+  <?php
+}
+add_action('wp_head', 'cookie_consent_js');
