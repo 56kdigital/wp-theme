@@ -132,6 +132,9 @@ add_image_size( 'post-grid-thumb', 410, 300, true );
 add_image_size( 'client-logo', 180, 60 );
 add_image_size( 'client-logo-2x', 360, 120 );
 
+add_image_size( 'employee-thumb', 310, 310, true );
+add_image_size( 'employee-thumb-2x', 620, 620, true );
+
 
 // Default blog image
 function get_default_blog_image($size=null){

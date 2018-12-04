@@ -1,0 +1,23 @@
+
+.employees-grid {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.employees-grid__item {
+	margin-bottom: $base*2;
+	width: 100%;
+	max-width: 390px;
+	padding: 0 40px;
+}
+
+.employee__thumb {
+	overflow: hidden;
+	margin-bottom: 24px;
+	border-radius: 50%;
+}
+
+.employee__info {
+	text-align: center;
+}
